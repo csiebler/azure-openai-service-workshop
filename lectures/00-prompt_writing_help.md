@@ -7,10 +7,10 @@ All examples use `text-davinci-002` as the model and use a temperature of `0.7`.
 
 Just like when telling somebody else what to do, GPT-3 heavily benefits if we tell it exactly what we want from it.
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > Write an article about spring cleaning.
 
-**Completion (shortened):**
+:repeat: **Completion (shortened):**
 > After a long, cold winter, there’s nothing like the feeling of springtime in the air. And with that comes the urge to spring clean our homes! Whether you’re a neat freak or a bit of a messy person, there’s no denying that a good spring clean can make your home feel fresh and new again.
 > 
 > Here are a few tips to help you get started on your spring cleaning:
@@ -21,10 +21,10 @@ Just like when telling somebody else what to do, GPT-3 heavily benefits if we te
 
 The article looks good, but maybe we just want to have 3 takeaways:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > Write an short article about spring cleaning. The article should have 3 bullet points as the main talking points and a short intro and summary.
 
-**Completion:**
+:repeat: **Completion:**
 > It's that time of year again! Time to break out the cleaning supplies and get to work. Spring cleaning is a great way to freshen up your home and get rid of all the dust and cobwebs that have accumulated over the winter. Here are a few tips to help you get the most out of your spring cleaning:
 > 
 > -Start from the top and work your way down. Dust and cobwebs tend to collect on ceilings, so start there and work your way down to the floors.
@@ -39,10 +39,10 @@ The article looks good, but maybe we just want to have 3 takeaways:
 
 Let's say we want the article as markdown:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > Write an short article about spring cleaning. The article should have 3 bullet points as the main talking points and a short intro and summary. Write the article formatted as markdown with proper H1 and H2 headers.
 
-**Completion:**
+:repeat: **Completion:**
 > ```
 > # Spring Cleaning
 > 
@@ -59,10 +59,10 @@ Let's say we want the article as markdown:
 
 Let's take a different example:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > For the companies Microsoft, UBS, FedEx, classify each company into its industry and also write their yearly revenue.
 
-**Completion:**
+:repeat: **Completion:**
 > ```
 > Microsoft: Technology; $127.8 billion
 > UBS: Banking; $51.2 billion
@@ -71,10 +71,10 @@ Let's take a different example:
 
 Now, we can manually "force" a more machine readable format:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > For the companies Microsoft, UBS, FedEx, classify each company into its industry and also write their yearly revenue. Write the results as COMPANY:INDUSTRY:REVENUE.
 
-**Completion:**
+:repeat: **Completion:**
 > ```
 > Microsoft:Technology:$127.8 billion
 > UBS:Banking:$67.7 billion
@@ -83,10 +83,10 @@ Now, we can manually "force" a more machine readable format:
 
 Or we can directly ask to generate a csv:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > For the companies Microsoft, UBS, FedEx, classify each company into its industry and also write their yearly revenue. Give the results as a CSV. Use COMPANY, INDUSTRY and REVENUE as headers.
 
-**Completion:**
+:repeat: **Completion:**
 > ```
 > COMPANY,INDUSTRY,REVENUE
 > Microsoft,Software,118640
@@ -96,11 +96,11 @@ Or we can directly ask to generate a csv:
 
 Here, the revenue seems to look off, so let's ask it to format it:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > For the companies Microsoft, UBS, FedEx, classify each company into its industry and also write their yearly revenue. Give the results as a CSV. Use COMPANY, INDUSTRY and REVENUE as headers and make sure revenue is printed as $x.xxbn.
 
 
-**Completion:**
+:repeat: **Completion:**
 > ```
 > COMPANY,INDUSTRY,REVENUE
 > Microsoft,Technology,$127.8bn
@@ -114,7 +114,7 @@ As we notice, the revenue numbers differ between calls. This is mostly because G
 
 Often, we want to extract various data points from a text "payload". Here, it helps to tell GPT-3 where the text starts, by explicitly naming it (e.g., "book chapter"):
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > Extract all the names of all the persons who are mentioned in the book chapter below.
 > 
 > Book chapter:
@@ -122,7 +122,7 @@ Often, we want to extract various data points from a text "payload". Here, it he
 > 
 > Persons:
 
-**Completion:**
+:repeat: **Completion:**
 > Peter, Marry
 
 In this case, GPT-3 also does better when you end the prompt with "Persons:", so it knows what you expect.
@@ -131,35 +131,35 @@ In this case, GPT-3 also does better when you end the prompt with "Persons:", so
 
 Sometimes we have non-English text that we want to process. In many cases, OpenAI is pretty good at understanding that text, but it can struggle when the prompt is also written in non-English. Therefore, it often works better to the have the "payload" text in the non-English language, while keeping the prompt in English. OpenAI often answers in English:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > Summarize what things I did buy in the following sentence.
 > Give the results as a bullet point list and just list the items.
 > 
 > Sentence: Ich ging in den Supermarkt und kaufte Äpfel, Karotten und Pasta.
 > Items:
 
-**Completion:**
+:repeat: **Completion:**
 > -Apples
 > -Carrots
 > -Pasta
 
 However, running the same prompt again might give you a German answer.
 
-**Completion (re-generated):**
+:repeat: **Completion (re-generated):**
 > - Äpfel
 > - Karotten
 > - Pasta
 
 So in order to get an English completion, we can ask for an English-only answer:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > Summarize what things I did buy in the following sentence.
 > Give the results as a bullet point list and just list the items. Make sure to answer only in English.
 > 
 > Sentence: Ich ging in den Supermarkt und kaufte Äpfel, Karotten und Pasta.
 > Items:
 
-**Completion:**
+:repeat: **Completion:**
 > -Apples
 > -Carrots
 > -Pasta
@@ -170,22 +170,22 @@ Starting with `text-davinci-003`, GPT-3 is getting better at also answering in y
 
 In some cases, we might want to answer certain questions given some text. If you ask a question where the answer is within the text, OpenAI does a good job:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > The insurance covers the driver and any family members.
 > 
 > Does the insurance cover my wife?
 
-**Completion:**
+:repeat: **Completion:**
 > Yes, the insurance covers your wife and any other family members.
 
 However, when you ask a question that can't be answered from the text, OpenAI starts coming up with its own thoughts:
 
-**Prompt:**
+:arrow_forward: **Prompt:**
 > The insurance covers the driver and any family members.
 > 
 > Am I also insured when driving outside of Europe?
 
-**Completion:**
+:repeat: **Completion:**
 > No, the insurance does not cover driving outside of Europe. If you plan to drive outside of Europe, you will need to purchase additional insurance coverage.
 
 In order to avoid such a scenario, it helps to tell OpenAI how it should behave if the answer is not in the text:
@@ -195,5 +195,5 @@ In order to avoid such a scenario, it helps to tell OpenAI how it should behave 
 > 
 > Am I also insured when driving outside of Europe? If the information is not present in the policy, then write "N/A".
 
-**Completion:**
+:repeat: **Completion:**
 N/A
