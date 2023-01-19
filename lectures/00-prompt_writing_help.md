@@ -193,7 +193,7 @@ In order to avoid such a scenario, it helps to tell OpenAI how it should behave 
 **Insurance policy:**
 > The insurance covers the driver and any family members.
 > 
-> Am I also insured when driving outside of Europe? If the information is not present in the policy, then write "N/A".
+> Am I also insured when driving outside of Europe? If the information is not present in the policy, then write "Answer not found in text!".
 
 :repeat: **Completion:**
-N/A
+Answer not found in text!
