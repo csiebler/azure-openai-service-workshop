@@ -1,5 +1,6 @@
 # Exercises
 
+In this document, you find a few exercises for practicing prompt engineering. For this, we'll give you a payload to operate on (e.g., some text) and the expected completion. Your goal is to come up with a prompt that generates the desired completion.
 ___
 
 ## :question: 01 - Simple prompt engineering
@@ -9,13 +10,20 @@ Here's an example sentence:
 I was enjoying the sun, but then a huge cloud came and covered the sky.
 ```
 
-Come up with a prompt that:
+Now come up with  three individual prompts that generate the following completions:
 
-* Translates the sentence to German
-* Negates the sentence
-* Converts it into third person
+```
+Ich genoss die Sonne, aber dann kam eine riesige Wolke und bedeckte den Himmel.
+```
 
-(one prompt for each)
+```
+I was not enjoying the sun, and then a huge cloud did not come and cover the sky.
+```
+
+```
+She was enjoying the sun, but then a huge cloud came and covered the sky.
+```
+
 
 <details>
   <summary>:white_check_mark: See solution!</summary>
@@ -58,12 +66,14 @@ Use the same example sentence:
 I was enjoying the sun, but then a huge cloud came and covered the sky.
 ```
 
-Come up with a single prompt that:
-
-* Translates the sentence to German
-* Negates the sentence
-* Converts it into third person
-* And outputs the three new sentences into a JSON document
+Come up with a prompt, that generates the following completion:
+```
+{
+    "translated": "Ich genoss die Sonne, aber dann kam eine riesige Wolke und bedeckte den Himmel.",
+    "negated": "I was not enjoying the sun, and no huge cloud came and covered the sky.",
+    "third_person": "She was enjoying the sun, but then a huge cloud came and covered the sky."
+}
+```
 
 <details>
   <summary>:white_check_mark: See solution!</summary>
@@ -101,15 +111,16 @@ Linked email account: mateo@contosorestaurant.com
 Swift code: CHASUS33XXX
 ```
 
-Come up with a single prompt that extract the relevant information from the email:
-
-* Reason for contact
-* Name of customer
-* SSN
-* Date of birth (as MM/DD/YYYY format)
-
-Also classify the email into one of `lost_card`, `account_closure`, `address_change`. 
-Give the responses as JSON.
+Come up with a prompt, that generates the following output:
+```
+{
+    "reason": "Lost card",
+    "classified_reason": "lost_card",
+    "name": "Mateo Gomez",
+    "ssn": "123-45-6789",
+    "dob": "09/09/1989"
+}
+```
 
 <details>
   <summary>:white_check_mark: See solution!</summary>
