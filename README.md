@@ -9,6 +9,7 @@ This is a workshop for Azure OpenAI Service. The goal is to help users get famil
 ## Exercises
 
 * :muscle: [Simple prompt writing exercises](exercises/exercises.md)
+* :muscle: [Quickstart](exercises/quickstart.ipynb)
 * :muscle: [Q&A with embeddings](exercises/qna_with_embeddings_exercise.ipynb)
 * :muscle: [Unsupervised movie classification and recommendations](exercises/movie_classification_unsupervised_incl_recommendations_exercise.ipynb)
 * :muscle: [Email Summarization and Answering App](exercises/email_app.md)
