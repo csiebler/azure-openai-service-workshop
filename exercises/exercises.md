@@ -286,6 +286,48 @@ ___
   }
   ```
 
+<details>
+  <summary>:white_check_mark: See solution!</summary>
+  
+  ```
+  Below is a customer call transcription between customer call employee at Contoso Company and a customer. Extract the following information:
+
+  - Classified reason for contact (can be one of "lost_package", "late_package", "address_change", "new_package_request")
+  - Is the problem resolved? (can be one of "resolved", "unresolved")
+  - Call summary (in max 100 characters)
+  - Name of customer
+  - Name of call center employee
+  - Customer order number
+  - Customer contact information (if not mentioned, then "N/A")
+  - New customer address (if the call reason is to change address, else "N/A")
+  - Customer's sentiment in the beginning of the call (can be one or more of "calm", "complaining", "angry", "frustrated", "unhappy", "neutral", "happy")
+  - Customer's sentiment in the beginning of the call (can be one or more of "calm", "complaining", "angry", "frustrated", "unhappy", "neutral", "happy")
+  - How satisfied is the customer in the beginning of the call, 0 being very unsatisfied and 10 being very satisfied
+  - How satisfied is the customer in the end of the call, 0 being very unsatisfied and 10 being very satisfied
+  - Estimated time of arrival of package
+  - Action item (can be one or more of "no_action", "track_package", "inquire_package_status", "make_address_change", "cancel_order", "contact_customer)
+
+  If customer is satisfied in the end, there is no follow up needed. Else, follow up with the relevant internal department to check the status.
+
+  Extract it as JSON with keys classified_reason, resolve_status, call_summary, customer_name, employee_name, order_number, customer_contact_nr, new_address, sentiment_initial, sentiment_final, satisfaction_score_initial, satisfaction_score_final, eta, action_item.
+
+  Employee: "Hello, this is Julia Schreider from Contoso Company. How can I help you today?"
+  Customer: "Hi, I am Carsten Mueller. I ordered a package 10 days ago, on February 10th, and it was supposed to arrive in maximum 5 business days. I have called three times already and nobody could provide any more information. I want to know where the package is and I want the problem to be solved immediately. This is the worst service I had for a long time!"
+  Employee: "I apologize for the inconvenience, Mr. Mueller. I understand your frustration and I'm here to help. Can you please provide me with your order number so I can look into this for you?"
+  Customer: "Yes, it's ACZ456789."
+  Employee: "Thank you. I'm looking into it now. Can you please hold for a few minutes while I check the status of your package?"
+  Customer: "Okay."
+  Employee: "Thank you for your patience. I am sorry to inform you that I am unable to find the status of your package. It appears to have left the sending address, but no up-to-date status on the current location. I will further investigate your case and get back to you as soon as possible via phone call. Could you please provide me your contact information?"
+  Customer: "Ah not again. Anyway, my phone number is +4911112223344."
+  Employee: "I apologize again for the inconvenience. Is there anything else I can help you with today?"
+  Customer: "No."
+  Employee: "Thank you. Have a great day!"
+
+  JSON:
+  ```
+
+</details>
+
 ___
 
 ## :question: Exercise 11 - Few-shot learning
