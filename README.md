@@ -23,6 +23,8 @@ Do not cheat! :sweat_smile:
 * :bulb: Solution - [Unsupervised movie classification and recommendations](exercises/solutions/movie_classification_unsupervised_incl_recommendations_solution.ipynb)
 * :bulb: Solution - [Email Summarization and Answering App](exercises/solutions/email_app.py)
 
-## Q&A quickstart
+## Q&A Quick Start
 
 If you want to quickly create a Q&A webapp using your own data, please follow the [quickstart guide notebook](qna-quickstart-template/qna-app-quickstart.ipynb).
+
+If you want to use LlamaIndex 🦙 (GPT Index), follow the [quickstart guide notebook with llama-index](qna-quickstart-with-gpt-index/qna-quickstart-with-llama-index.ipynb).
