@@ -25,4 +25,4 @@ Do not cheat! :sweat_smile:
 
 ## Q&A quickstart
 
-If you want to quickly create a Q&A webapp using your own data, please follow the [quickstart guide notebook](qna-quickstart-template\qna-app-quickstart.ipynb).
+If you want to quickly create a Q&A webapp using your own data, please follow the [quickstart guide notebook](qna-quickstart-template/qna-app-quickstart.ipynb).
