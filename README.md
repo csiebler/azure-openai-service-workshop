@@ -22,3 +22,7 @@ Do not cheat! :sweat_smile:
 * :bulb: Solution - [Q&A with embeddings](exercises/solutions/qna_with_embeddings_solution.ipynb)
 * :bulb: Solution - [Unsupervised movie classification and recommendations](exercises/solutions/movie_classification_unsupervised_incl_recommendations_solution.ipynb)
 * :bulb: Solution - [Email Summarization and Answering App](exercises/solutions/email_app.py)
+
+## Q&A quickstart
+
+If you want to quickly create a Q&A webapp using your own data, please follow the [quickstart guide notebook](qna-quickstart-template\qna-app-quickstart.ipynb).
