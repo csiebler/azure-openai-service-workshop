@@ -10,3 +10,4 @@ scikit-learn==1.2.0
 tenacity
 tiktoken==0.3.0
 llama-index
+langchain==0.0.117
