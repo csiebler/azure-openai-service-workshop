@@ -1,3 +1,5 @@
+# :warning::warning::warning: Please navigate to [github.com/microsoft/azure-openai-in-a-day-workshop](https://github.com/microsoft/azure-openai-in-a-day-workshop/) to find the latest version of this workshop. This repo has been deprecated. :warning::warning::warning:
+
 # azure-openai-service-workshop
 
 This is a workshop for Azure OpenAI Service. The goal is to help users get familiar with the service, inspire them regarding writing prompts and also to give a bunch of exercises where you can practice writing them.
