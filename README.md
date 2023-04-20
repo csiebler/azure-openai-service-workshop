@@ -1,34 +1,29 @@
 # :warning::warning::warning: Please navigate to [github.com/microsoft/azure-openai-in-a-day-workshop](https://github.com/microsoft/azure-openai-in-a-day-workshop/) to find the latest version of this workshop. This repo has been deprecated. :warning::warning::warning:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
 
 # azure-openai-service-workshop
 
